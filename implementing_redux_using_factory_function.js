@@ -14,6 +14,10 @@ function store(initialState, reducer){
 	if(typeof listener === 'function') store.subscribers.push(listener);
 
 	}
+	
+	store.getState() {
+	return store.state;
+	}
 
 	store.dispatch = (action) => {
 	
